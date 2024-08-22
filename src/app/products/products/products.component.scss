@@ -1,0 +1,39 @@
+.container-input{
+  width: 55%;
+  padding-top: 2em;
+}
+.container-products{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 1.5rem;
+}
+
+.container-products-limt{
+  max-width: 1500px;
+}
+
+.space-card{
+  padding: 0.6rem;
+  max-width: 224px;
+}
+
+@media only screen and (max-width: 725px) {
+  .container-input{
+    width: 90%;
+  }
+  .container-products-limt{
+    max-width: 300px;
+  }
+
+  .space-card{
+    max-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .container-products-limt{
+    max-width: 200px;
+  }
+}

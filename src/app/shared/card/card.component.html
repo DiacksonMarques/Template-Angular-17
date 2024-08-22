@@ -1,0 +1,28 @@
+@if(product){
+  <div class="card">
+    <div class="card_img_top">
+      <button class="card-img-close" (click)="openModal()">
+        <img src="https://githubanotaai.github.io/frontend-interview-mock-data/assets/close.svg" width="1"  alt="Botão de Excluir">
+      </button>
+      <img src="{{product.img}}" class="" alt="Imagem">
+
+      @switch (product.type) {
+        @case ("1") {
+          <span class="card-img-toolbar toolbar_blue">Paisagem</span>
+        }
+        @case ("2") {
+          <span class="card-img-toolbar toolbar_danger">Flor</span>
+        }
+        @case ("3") {
+          <span class="card-img-toolbar toolbar_green">Pizza</span>
+        }
+        @default {}
+      }
+    </div>
+
+    <div class="card_body">
+      <h3 class="card-title">{{product.title}}</h3>
+      <p class="card-text">{{product.description}}</p>
+    </div>
+  </div>
+}

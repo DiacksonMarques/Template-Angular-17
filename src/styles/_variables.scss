@@ -1,0 +1,21 @@
+:root {
+  --base-color: #e9eff0;
+  --primary: #ffffff;
+  --secondary: #3aa5f0;
+  --danger: red;
+  --black: #000;
+  --gray: #6c757d;
+  --gray-100: #c0c0c0;
+  --gray-500: #212529;
+  --blue: rgb(7, 84, 209);
+  --green: #8C770B;
+
+  --box-shadow-sm: 0 .125rem .25rem rgba(0,0,0, .075);
+  --box-shadow: 0 .5rem 1rem rgba(0,0,0, .15);
+  --box-shadow-lg: 0 1rem 3rem rgba(0,0,0, .175);
+
+  --font-lg: clamp(0.8rem, 2vw + 0.1rem, 1rem);
+  --font-sm: clamp(0.6rem, 2vw + 0.1rem, 0.9rem);
+  --font-xl: clamp(0.6rem, 1vw + 0.1rem, 0.8rem);
+  --font-xxl: clamp(0.4rem, 2vw + 0.1rem, 0.68rem);
+}

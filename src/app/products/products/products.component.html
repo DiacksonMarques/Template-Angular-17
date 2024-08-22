@@ -1,0 +1,21 @@
+<app-modal
+  [(viewModal)]="openModal"
+  [title]="'Deseja exluir o item?'"
+  [description]="'O mesmo desaparece da página, voltando após reinicar na página.'"
+></app-modal>
+<section class="row column-1 justify-item">
+  <div class="container-input">
+    <app-input-group (filterValue)="filterProduct($event)"></app-input-group>
+  </div>
+</section>
+<div class="container-products">
+  <section class="row column-adapter justify-item container-products-limt">
+    @for(product of filteredProducts | async; track product.id){
+      <app-card class="space-card"
+        [product]="product"
+        (butonDelete)="openModalDelete($event)"
+      ></app-card>
+    }
+  </section>
+</div>
+
